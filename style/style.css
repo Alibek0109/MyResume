@@ -1,0 +1,204 @@
+@import "fonts.css";
+
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+body {
+    background: url(../img/bgbody.jpg) no-repeat center center /cover;
+
+}
+
+.flex {
+    display: flex;
+}
+
+.container {
+    max-width: 1110px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+h1 {
+    text-align: center;
+    font-size: 50px;
+    margin-bottom: 30px;
+    font-family: "rblack";
+}
+
+p {
+    font-size: 20px;
+    font-family: "rreg";
+    padding: 8px 0;
+
+}
+
+a {
+    display: inline-block;
+    width: max-content;
+    font-family: "rreg";
+    color: black;
+}
+
+h2 {
+    font-size: 30px;
+    font-family: "rbold";
+    margin-bottom: 16px;
+}
+
+span {
+    font-family: "rbold";
+    font-weight: 700;
+
+}
+
+h3 {
+    font-family: "rreg";
+    font-size: 20px;
+    font-weight: 400;
+}
+
+/* header */
+
+
+header {
+    margin-bottom: 30px;
+}
+
+.block {
+    justify-content: space-around;
+}
+
+.resume__img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    max-width: 350px;
+    padding: 0 15px;
+}
+
+.right {
+    max-width: 535px;
+    width: 100%;
+    padding: 0 15px;
+}
+
+header img {
+    width: 350px;
+    height: 450px;
+}
+
+/* mail */
+
+.result {
+    font-weight: 900;
+}
+
+.tel {
+    line-height: 24px;
+}
+
+.tel:hover {
+    font-weight: 900;
+    transition: 500ms;
+    color: darkblue;
+}
+
+.mail {
+    line-height: 24px;
+}
+
+.mail:hover {
+    font-weight: 900;
+    transition: 500ms;
+    color: darkblue;
+}
+
+.telegram {
+    line-height: 24px;
+}
+
+.telegram:hover {
+    font-weight: 900;
+    transition: 500ms;
+    color: darkblue;
+}
+
+/* footer */
+
+.footer {
+    background: black;
+    color: white;
+    padding: 40px 15px;
+}
+
+.footer-about__me {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-my__name {
+    font-size: 20px;
+    font-family: "rreg";
+    display: flex;
+    align-items: center;
+}
+
+.footer-tel,
+.footer-mail,
+.footer-tg {
+    color: white;
+    font-size: 25px;
+    margin-left: 10px;
+    
+}
+
+.footer-tel:hover,
+.footer-mail:hover,
+.footer-tg:hover {
+    font-weight: 900;
+    color: beige;
+    transition: 500ms;
+    
+}
+
+.why__resume {
+    font-size: 15px;
+    font-family: "rreg";
+    padding-top: 20px;
+    text-align: center;
+}
+
+@media (max-width: 1200px) {}
+
+@media (max-width: 992px) {
+    .block {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .resume__img {
+        margin-bottom: 30px;
+    }
+
+}
+
+@media (max-width: 768px) {}
+
+@media (max-width: 576px) {
+    .footer__about-me {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .footer-my__name {
+        display: flex;
+        justify-content: center;
+    }
+}
